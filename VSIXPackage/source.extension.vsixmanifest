@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="GitIgnoreVSIXPackage.7b4d9a5a-e692-4eaf-a47f-b9c61f7842b4" Version="1.0" Language="en-US" Publisher="Sreenivasa Reddy Inukollu" />
+        <DisplayName>Git Ignore File</DisplayName>
+        <Description xml:space="preserve">This package adds the ability to add a .gitignore file to your project. My objective was to be able to reduce the copy and paste that is required to create a .gitignore file in the older templates. 
+
+Many new templates come with a .gitignore file.
+
+This is also my first attempt at creating an extension. Please send in feedback if you seek any improvements.
+		</Description>
+	</Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0]" />
+    </Installation>
+    <Dependencies>
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    </Dependencies>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="IgnoreItem" d:TargetPath="|IgnoreItem;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+    </Assets>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,16.0)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
+</PackageManifest>

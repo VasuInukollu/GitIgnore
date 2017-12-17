@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Git Ignore File</Name>
+    <Description>Generic .gitignore file</Description>
+    <Icon>IgnoreItem.ico</Icon>
+    <TemplateID>59290aa3-d71f-4e16-b951-d80423110d33</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <DefaultName>.gitignore</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <References>
+      <Reference>
+        <Assembly>System</Assembly>
+      </Reference>
+    </References>
+    <ProjectItem TargetFileName=".gitignore" ReplaceParameters="false">.gitignore</ProjectItem>
+  </TemplateContent>
+</VSTemplate>
